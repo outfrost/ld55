@@ -21,3 +21,9 @@ mono_crash.*
 
 # VSCode
 .vscode/
+
+# Reference art
+/assets/ref/
+
+# blender
+/assets/raw/*.blend*
