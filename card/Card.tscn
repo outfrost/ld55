@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3 uid="uid://baeubloubqiq7"]
+
+[ext_resource type="Material" uid="uid://copxgii18vfhi" path="res://card/mat_card_front.tres" id="1_au22g"]
+[ext_resource type="Material" uid="uid://cg05j3yjqmae7" path="res://card/mat_card_back.tres" id="1_qc11u"]
+[ext_resource type="Script" path="res://card/Card.gd" id="1_vgjhm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kf4wg"]
+size = Vector3(0.1, 0.14, 0.02)
+
+[sub_resource type="QuadMesh" id="QuadMesh_mrkwk"]
+material = ExtResource("1_au22g")
+size = Vector2(0.1, 0.14)
+
+[sub_resource type="QuadMesh" id="QuadMesh_50ews"]
+material = ExtResource("1_qc11u")
+size = Vector2(0.1, 0.14)
+
+[node name="Card" type="Node3D"]
+script = ExtResource("1_vgjhm")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49012e-08, -1.49012e-08, -1.49012e-08)
+shape = SubResource("BoxShape3D_kf4wg")
+
+[node name="Visual" type="Node3D" parent="."]
+
+[node name="Front" type="MeshInstance3D" parent="Visual"]
+gi_mode = 2
+mesh = SubResource("QuadMesh_mrkwk")
+skeleton = NodePath("../..")
+
+[node name="Back" type="MeshInstance3D" parent="Visual"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+gi_mode = 2
+mesh = SubResource("QuadMesh_50ews")
+skeleton = NodePath("../..")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.991445, 0.130526, 0, -0.130526, 0.991445, 0, 0.15, 0.25)
+near = 0.01
+far = 200.0
