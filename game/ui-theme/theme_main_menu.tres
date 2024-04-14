@@ -1,0 +1,21 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://bneqecul7ufgx"]
+
+[ext_resource type="FontVariation" uid="uid://2ny6cbh4f65c" path="res://game/ui-theme/font/default/regular.tres" id="1_aswtm"]
+[ext_resource type="FontVariation" uid="uid://0508n4x4c5gj" path="res://game/ui-theme/font/banner/bold.tres" id="1_pi440"]
+[ext_resource type="StyleBox" uid="uid://0yyucw3hdl8" path="res://game/ui-theme/button_style_main_menu.tres" id="2_2htam"]
+
+[resource]
+default_font = ExtResource("1_aswtm")
+default_font_size = 20
+Button/colors/font_color = Color(0.980392, 0.380392, 0.286275, 1)
+Button/colors/font_disabled_color = Color(1, 1, 1, 0.313726)
+Button/colors/font_focus_color = Color(0.54902, 0.176471, 0.121569, 1)
+Button/colors/font_hover_color = Color(0.980392, 0.639216, 0.588235, 1)
+Button/colors/font_pressed_color = Color(0.941176, 0.941176, 0.941176, 1)
+Button/font_sizes/font_size = 64
+Button/fonts/font = ExtResource("1_pi440")
+Button/styles/disabled = ExtResource("2_2htam")
+Button/styles/focus = ExtResource("2_2htam")
+Button/styles/hover = ExtResource("2_2htam")
+Button/styles/normal = ExtResource("2_2htam")
+Button/styles/pressed = ExtResource("2_2htam")

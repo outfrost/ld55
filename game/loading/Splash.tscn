@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://daho024vlnt3h"]
+
+[ext_resource type="Theme" uid="uid://cgpmko4d01n84" path="res://game/ui-theme/theme.tres" id="1_4r55f"]
+[ext_resource type="Script" path="res://game/loading/Splash.gd" id="2_rvm1g"]
+[ext_resource type="Texture2D" uid="uid://c6gbryv58xgdv" path="res://game/loading/godot.png" id="3_hgmgr"]
+[ext_resource type="AudioStream" uid="uid://q5ujwp1gofbv" path="res://game/loading/gohh.wav" id="6_h1ekb"]
+
+[node name="Splash" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_4r55f")
+script = ExtResource("2_rvm1g")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Godot" type="TextureRect" parent="."]
+visible = false
+texture_filter = 6
+texture_repeat = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -300.0
+offset_right = 400.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_hgmgr")
+expand_mode = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_h1ekb")
+volume_db = -5.0

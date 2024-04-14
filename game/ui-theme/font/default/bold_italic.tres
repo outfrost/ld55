@@ -1,0 +1,9 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://bf4yyux86yb1x"]
+
+[ext_resource type="FontFile" uid="uid://bd7h053no3ypc" path="res://game/ui-theme/font/asset/Aleo/Aleo-Italic-VariableFont_wght.ttf" id="1_ouqcn"]
+
+[resource]
+base_font = ExtResource("1_ouqcn")
+variation_opentype = {
+2003265652: 700
+}

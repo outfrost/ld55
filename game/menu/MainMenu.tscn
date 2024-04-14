@@ -1,0 +1,216 @@
+[gd_scene load_steps=11 format=3 uid="uid://dmfdkwcu73843"]
+
+[ext_resource type="Theme" uid="uid://cgpmko4d01n84" path="res://game/ui-theme/theme.tres" id="1_7yq1p"]
+[ext_resource type="Script" path="res://game/menu/CreditsPopup.gd" id="2"]
+[ext_resource type="Script" path="res://game/menu/VersionLabel.gd" id="3_426jp"]
+[ext_resource type="Script" path="res://game/menu/MainMenu.gd" id="4"]
+[ext_resource type="Theme" uid="uid://bneqecul7ufgx" path="res://game/ui-theme/theme_main_menu.tres" id="4_g6k5d"]
+[ext_resource type="FontVariation" uid="uid://2ny6cbh4f65c" path="res://game/ui-theme/font/default/regular.tres" id="6_qe4t0"]
+[ext_resource type="Shader" path="res://game/menu/credits_popup_panel.gdshader" id="7_biom8"]
+[ext_resource type="FontVariation" uid="uid://b0ji8plgwfom1" path="res://game/ui-theme/font/default/bold.tres" id="7_x31vi"]
+[ext_resource type="FontVariation" uid="uid://0508n4x4c5gj" path="res://game/ui-theme/font/banner/bold.tres" id="8_0xu7u"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xdcc4"]
+shader = ExtResource("7_biom8")
+shader_parameter/border_width = 2.0
+shader_parameter/rect_size = null
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_7yq1p")
+script = ExtResource("4")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch_mode = 7
+
+[node name="VersionLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -64.0
+offset_right = 512.0
+offset_bottom = -8.0
+grow_vertical = 0
+text = "version"
+vertical_alignment = 2
+script = ExtResource("3_426jp")
+
+[node name="TitleLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.05
+anchor_right = 0.95
+anchor_bottom = 0.5
+theme_override_colors/default_color = Color(0.980392, 0.380392, 0.286275, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.627451)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/shadow_outline_size = 6
+theme_override_fonts/normal_font = ExtResource("8_0xu7u")
+theme_override_font_sizes/normal_font_size = 128
+bbcode_enabled = true
+text = "[center]title[/center]"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.85
+anchor_top = 0.9
+anchor_right = 0.85
+anchor_bottom = 0.9
+offset_left = -360.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("4_g6k5d")
+alignment = 2
+
+[node name="PlayButton" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "PLAY"
+alignment = 2
+clip_text = true
+
+[node name="OptionsButton" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+disabled = true
+text = "SETTINGS"
+alignment = 2
+clip_text = true
+
+[node name="CreditsButton" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "CREDITS"
+alignment = 2
+clip_text = true
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "QUIT"
+alignment = 2
+clip_text = true
+
+[node name="CreditsPopup" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2")
+
+[node name="Panel" type="Panel" parent="CreditsPopup"]
+texture_filter = 2
+texture_repeat = 1
+material = SubResource("ShaderMaterial_xdcc4")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -430.0
+offset_top = -286.0
+offset_right = 430.0
+offset_bottom = 286.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CreditsPopup/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = -8.0
+offset_bottom = -54.0
+theme_override_fonts/normal_font = ExtResource("6_qe4t0")
+theme_override_fonts/bold_font = ExtResource("7_x31vi")
+theme_override_fonts/italics_font = ExtResource("8_0xu7u")
+theme_override_font_sizes/italics_font_size = 32
+bbcode_enabled = true
+text = "[center][i][url=https://lyall-kindmurr.itch.io/]Lyall Kindmurr[/url][/i]
+a
+
+
+[i][url=https://outfrost.itch.io/]Outfrost[/url][/i]
+a
+
+
+[b][url=https://honestdan.itch.io/]HonestDan[/url][/b]
+[url=https://clips.twitch.tv/NeighborlyToughCakeDoritosChip]Intro sound[/url]
+[/center]"
+scroll_active = false
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="CreditsPopup/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = -54.0
+theme_override_fonts/normal_font = ExtResource("6_qe4t0")
+theme_override_fonts/bold_font = ExtResource("7_x31vi")
+theme_override_fonts/italics_font = ExtResource("8_0xu7u")
+theme_override_font_sizes/italics_font_size = 32
+bbcode_enabled = true
+text = "[center]A [b][url=]Ludum Dare 55[/url][/b] game
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Made with [b][url=https://godotengine.org/]Godot Engine[/url][/b]
+[/center]"
+scroll_active = false
+
+[node name="CloseButton" type="Button" parent="CreditsPopup/Panel"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -176.0
+offset_top = -38.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Close"

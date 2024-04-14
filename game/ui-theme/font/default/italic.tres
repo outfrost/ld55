@@ -1,0 +1,6 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://niguaunegliq"]
+
+[ext_resource type="FontFile" uid="uid://bd7h053no3ypc" path="res://game/ui-theme/font/asset/Aleo/Aleo-Italic-VariableFont_wght.ttf" id="1_lol00"]
+
+[resource]
+base_font = ExtResource("1_lol00")

@@ -1,0 +1,6 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://bnko71w2gyi3r"]
+
+[ext_resource type="FontFile" uid="uid://8vscisy5xmdg" path="res://game/ui-theme/font/asset/FiraMono/FiraMono-Medium.ttf" id="1_6nbxi"]
+
+[resource]
+base_font = ExtResource("1_6nbxi")

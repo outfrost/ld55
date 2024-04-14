@@ -1,0 +1,9 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://0508n4x4c5gj"]
+
+[ext_resource type="FontFile" uid="uid://c8hwxtuawj5to" path="res://game/ui-theme/font/asset/GemunuLibre/GemunuLibre-VariableFont_wght.ttf" id="1_p8p0y"]
+
+[resource]
+base_font = ExtResource("1_p8p0y")
+variation_opentype = {
+2003265652: 700
+}
