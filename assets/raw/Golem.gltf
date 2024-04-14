@@ -8,7 +8,7 @@
 		{
 			"name":"Scene",
 			"nodes":[
-				10
+				9
 			]
 		}
 	],
@@ -120,24 +120,14 @@
 			"name":"Main"
 		},
 		{
-			"name":"neutral_bone",
-			"rotation":[
-				-0.7071067690849304,
-				0,
-				0,
-				0.7071067690849304
-			]
-		},
-		{
 			"mesh":0,
 			"name":"Golem.001",
 			"skin":0
 		},
 		{
 			"children":[
-				9,
-				7,
-				8
+				8,
+				7
 			],
 			"name":"Armature"
 		}
@@ -170,8 +160,7 @@
 				3,
 				2,
 				5,
-				4,
-				8
+				4
 			],
 			"name":"Armature"
 		}
@@ -226,7 +215,7 @@
 		{
 			"bufferView":6,
 			"componentType":5126,
-			"count":9,
+			"count":8,
 			"type":"MAT4"
 		}
 	],
@@ -269,13 +258,13 @@
 		},
 		{
 			"buffer":0,
-			"byteLength":576,
+			"byteLength":512,
 			"byteOffset":133760
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":134336,
+			"byteLength":134272,
 			"uri":"Golem.bin"
 		}
 	]
