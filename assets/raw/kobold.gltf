@@ -15,7 +15,7 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"Kobold"
+			"name":"Kobold.001"
 		}
 	],
 	"materials":[
@@ -36,7 +36,7 @@
 	],
 	"meshes":[
 		{
-			"name":"Kobold",
+			"name":"Kobold.001",
 			"primitives":[
 				{
 					"attributes":{
@@ -54,14 +54,14 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":1642,
+			"count":3255,
 			"max":[
 				2.4284682273864746,
 				5.797369003295898,
 				1.3989524841308594
 			],
 			"min":[
-				0,
+				-2.4284682273864746,
 				0.002790212631225586,
 				-2.237645149230957
 			],
@@ -70,51 +70,51 @@
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":1642,
+			"count":3255,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":1642,
+			"count":3255,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":2724,
+			"count":5448,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":19704,
+			"byteLength":39060,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":19704,
-			"byteOffset":19704,
+			"byteLength":39060,
+			"byteOffset":39060,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":13136,
-			"byteOffset":39408,
+			"byteLength":26040,
+			"byteOffset":78120,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":5448,
-			"byteOffset":52544,
+			"byteLength":10896,
+			"byteOffset":104160,
 			"target":34963
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":57992,
+			"byteLength":115056,
 			"uri":"kobold.bin"
 		}
 	]
