@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="Deck" load_steps=23 format=3 uid="uid://bheoeso164iy5"]
+
+[ext_resource type="Script" path="res://card/CardData.gd" id="1_0n417"]
+[ext_resource type="Script" path="res://card/Deck.gd" id="1_twwm3"]
+
+[sub_resource type="Resource" id="Resource_hyvsy"]
+script = ExtResource("1_0n417")
+spawn = 0
+text = ""
+
+[sub_resource type="Resource" id="Resource_ysehi"]
+script = ExtResource("1_0n417")
+spawn = 1
+text = ""
+
+[sub_resource type="Resource" id="Resource_0cbne"]
+script = ExtResource("1_0n417")
+spawn = 1
+text = ""
+
+[sub_resource type="Resource" id="Resource_o5c6w"]
+script = ExtResource("1_0n417")
+spawn = 2
+text = ""
+
+[sub_resource type="Resource" id="Resource_bhstg"]
+script = ExtResource("1_0n417")
+spawn = 2
+text = ""
+
+[sub_resource type="Resource" id="Resource_si5st"]
+script = ExtResource("1_0n417")
+spawn = 0
+text = ""
+
+[sub_resource type="Resource" id="Resource_rki8n"]
+script = ExtResource("1_0n417")
+spawn = 3
+text = ""
+
+[sub_resource type="Resource" id="Resource_6clmm"]
+script = ExtResource("1_0n417")
+spawn = 3
+text = ""
+
+[sub_resource type="Resource" id="Resource_grnjj"]
+script = ExtResource("1_0n417")
+spawn = 4
+text = ""
+
+[sub_resource type="Resource" id="Resource_8er2m"]
+script = ExtResource("1_0n417")
+spawn = 4
+text = ""
+
+[sub_resource type="Resource" id="Resource_jggss"]
+script = ExtResource("1_0n417")
+spawn = 5
+text = ""
+
+[sub_resource type="Resource" id="Resource_fgbl6"]
+script = ExtResource("1_0n417")
+spawn = 5
+text = ""
+
+[sub_resource type="Resource" id="Resource_fqeng"]
+script = ExtResource("1_0n417")
+spawn = 6
+text = ""
+
+[sub_resource type="Resource" id="Resource_t5jyj"]
+script = ExtResource("1_0n417")
+spawn = 6
+text = ""
+
+[sub_resource type="Resource" id="Resource_16gjc"]
+script = ExtResource("1_0n417")
+spawn = 7
+text = ""
+
+[sub_resource type="Resource" id="Resource_03w7u"]
+script = ExtResource("1_0n417")
+spawn = 7
+text = ""
+
+[sub_resource type="Resource" id="Resource_cl657"]
+script = ExtResource("1_0n417")
+spawn = 8
+text = ""
+
+[sub_resource type="Resource" id="Resource_jx76f"]
+script = ExtResource("1_0n417")
+spawn = 8
+text = ""
+
+[sub_resource type="Resource" id="Resource_fv2gs"]
+script = ExtResource("1_0n417")
+spawn = 3
+text = ""
+
+[sub_resource type="Resource" id="Resource_bg0jf"]
+script = ExtResource("1_0n417")
+spawn = 4
+text = ""
+
+[resource]
+script = ExtResource("1_twwm3")
+pool = Array[ExtResource("1_0n417")]([SubResource("Resource_hyvsy"), SubResource("Resource_ysehi"), SubResource("Resource_0cbne"), SubResource("Resource_o5c6w"), SubResource("Resource_bhstg"), SubResource("Resource_si5st"), SubResource("Resource_rki8n"), SubResource("Resource_6clmm"), SubResource("Resource_grnjj"), SubResource("Resource_8er2m"), SubResource("Resource_jggss"), SubResource("Resource_fgbl6"), SubResource("Resource_fqeng"), SubResource("Resource_t5jyj"), SubResource("Resource_16gjc"), SubResource("Resource_03w7u"), SubResource("Resource_cl657"), SubResource("Resource_jx76f"), SubResource("Resource_fv2gs"), SubResource("Resource_bg0jf")])
