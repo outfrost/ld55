@@ -10,4 +10,5 @@ spawn = ExtResource("2_vr0iv")
 minion = false
 sprite = ExtResource("3_ioirb")
 text = "Protection"
+description = "Enemies within attack range must attack a Protection minion first"
 element = 3

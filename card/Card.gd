@@ -16,6 +16,7 @@ var data: CardData:
 		data = v
 		if v:
 			$Visual/Front/CardText.text = v.text
+			$Visual/Front/CardDescription.text = v.description
 			if !sprite_mat:
 				$Visual/Front/Sprite.mesh = $Visual/Front/Sprite.mesh.duplicate(true)
 				sprite_mat = $Visual/Front/Sprite.mesh.material
