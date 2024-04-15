@@ -23,9 +23,12 @@ func _ready() -> void:
 	draw()
 
 func _process(delta: float) -> void:
-	for card in card_xforms:
-		card.position = card.position.lerp(card_xforms[card].origin, 0.1)
-		card.basis = card.basis.slerp(card_xforms[card].basis, 0.1)
+	var cards: = card_xforms.keys()
+	for i in range(card_xforms.size()):
+		var card = cards[i]
+		var lerp_rate: float = min((5.0 - 1.15 * sqrt(i)) * delta, 0.25)
+		card.position = card.position.lerp(card_xforms[card].origin, lerp_rate)
+		card.basis = card.basis.slerp(card_xforms[card].basis, lerp_rate).orthonormalized()
 
 func draw() -> void:
 	var num_draw: = HAND_SIZE - card_xforms.size()

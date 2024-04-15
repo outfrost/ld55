@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://grid/GridColliderGenerator.gd" id="1_f15ms"]
 [ext_resource type="PackedScene" uid="uid://qthxdvn20xn2" path="res://grid/arean_edge.tscn" id="2_3ikw5"]
 [ext_resource type="PackedScene" uid="uid://06nd072o273d" path="res://assets/raw/TerrainB.gltf" id="3_m1atw"]
+[ext_resource type="PackedScene" uid="uid://bl8lmuhqi2nk8" path="res://card/Hand.tscn" id="2_isvbf"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jc28x"]
 albedo_color = Color(0.478431, 0.360784, 0.207843, 1)
@@ -23,7 +24,13 @@ height = 9
 width = 7
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.908698, 0.256643, -0.329245, 3.35276e-08, 0.788698, 0.614781, 0.417454, -0.55865, 0.716688, -4.53911, 4.01174, 7.94828)
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 7, 12)
+current = true
+near = 0.01
+far = 200.0
+
+[node name="Hand" parent="Camera3D" instance=ExtResource("2_isvbf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.21, -0.35)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.785076, 0.168153, -0.596138, -0.118835, 0.985456, 0.12147, 0.607894, -0.0245207, 0.79364, -7, 4, 0)
