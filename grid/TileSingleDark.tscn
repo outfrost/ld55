@@ -1,10 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dsi6qxv340xyg"]
+[gd_scene load_steps=5 format=3 uid="uid://doq4mbusoxmxe"]
 
-[ext_resource type="Material" uid="uid://62bpcobaufnw" path="res://grid/mat_tile.tres" id="1_nli44"]
-[ext_resource type="Material" uid="uid://dkx5of0xjb8lp" path="res://grid/mat_tile_transparent.tres" id="2_377nf"]
+[ext_resource type="Material" uid="uid://ru7x13kt6wri" path="res://grid/mat_tile_dark.tres" id="1_ocl2j"]
+[ext_resource type="Material" uid="uid://dkx5of0xjb8lp" path="res://grid/mat_tile_transparent.tres" id="2_3tul4"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_nogh5"]
-material = ExtResource("1_nli44")
+material = ExtResource("1_ocl2j")
 size = Vector3(1.35, 0.1, 1.35)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_utwmt"]
@@ -22,13 +22,13 @@ skeleton = NodePath("../..")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02, 0)
 mesh = SubResource("BoxMesh_nogh5")
 skeleton = NodePath("../..")
-surface_material_override/0 = ExtResource("2_377nf")
+surface_material_override/0 = ExtResource("2_3tul4")
 
 [node name="MeshMove" type="MeshInstance3D" parent="Meshes"]
 transform = Transform3D(0.695935, 0, 0, 0, 0.695935, 0, 0, 0, 0.695935, 0, 0.074289, 0)
 mesh = SubResource("BoxMesh_nogh5")
 skeleton = NodePath("../..")
-surface_material_override/0 = ExtResource("2_377nf")
+surface_material_override/0 = ExtResource("2_3tul4")
 
 [node name="Area3D" type="Area3D" parent="."]
 

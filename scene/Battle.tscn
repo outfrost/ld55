@@ -1,8 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://e2ax0gqcoiuo"]
+[gd_scene load_steps=4 format=3 uid="uid://e2ax0gqcoiuo"]
 
 [ext_resource type="Script" path="res://grid/GridColliderGenerator.gd" id="1_f15ms"]
-[ext_resource type="Script" path="res://grid/Battle.gd" id="1_rrm88"]
-[ext_resource type="Material" uid="uid://b8g348caxds3t" path="res://grid/mat_tile_selected.tres" id="3_4vjtn"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jc28x"]
 albedo_color = Color(0.478431, 0.360784, 0.207843, 1)
@@ -12,19 +10,17 @@ material = SubResource("StandardMaterial3D_jc28x")
 size = Vector2(10.5, 13.5)
 
 [node name="Battle" type="Node3D"]
-script = ExtResource("1_rrm88")
 
 [node name="Field area" type="MeshInstance3D" parent="."]
 mesh = SubResource("PlaneMesh_s7phs")
 
-[node name="GridColliderGenerator" type="Node3D" parent="."]
+[node name="GridManager" type="Node3D" parent="."]
 script = ExtResource("1_f15ms")
 height = 9
 width = 7
-mat_selected = ExtResource("3_4vjtn")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.878817, 0.477159, 0, -0.477159, 0.878817, -0.185, 4.77803, 9.20928)
+transform = Transform3D(0.846862, 0.253759, -0.467366, 0, 0.878817, 0.477159, 0.531812, -0.404088, 0.744237, -6.22367, 4.01174, 7.94828)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.732353, 0.347877, -0.585356, 0, 0.859647, 0.510888, 0.680925, -0.37415, 0.629565, -7, 4, 0)
