@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://qthxdvn20xn2"]
+
+[ext_resource type="PackedScene" uid="uid://1vd8wxu7bqoq" path="res://assets/raw/AreanEdge.gltf" id="1_d3mj7"]
+[ext_resource type="Material" uid="uid://ciajjqq76ys78" path="res://grid/Materials/mat_dusty_stone.tres" id="2_5po31"]
+
+[node name="AreanEdge" instance=ExtResource("1_d3mj7")]
+
+[node name="Arena_Edge" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_5po31")

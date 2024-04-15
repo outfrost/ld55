@@ -34,6 +34,8 @@ func _ready():
 				curTile = tile_dark.instantiate()
 
 			add_child(curTile)
+			var rotation = randi_range(0,3)
+			curTile.rotation = Vector3(0, rotation * TAU/4,0)
 			curTile.position = Vector3( (i - float(width-1) / 2) * grid_size , 0 , -1 * (j - float(height-1) / 2 ) * grid_size )
 			tiles_list[i].append(curTile)
 			tiles_occupied[i].append(null)

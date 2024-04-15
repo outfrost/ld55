@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://doq4mbusoxmxe"]
+[gd_scene load_steps=6 format=3 uid="uid://doq4mbusoxmxe"]
 
-[ext_resource type="Material" uid="uid://ru7x13kt6wri" path="res://grid/mat_tile_dark.tres" id="1_ocl2j"]
-[ext_resource type="Material" uid="uid://dkx5of0xjb8lp" path="res://grid/mat_tile_transparent.tres" id="2_3tul4"]
+[ext_resource type="PackedScene" uid="uid://jj4e5oe3vkws" path="res://grid/rock_slab.tscn" id="1_bmamj"]
+[ext_resource type="Material" uid="uid://ru7x13kt6wri" path="res://grid/Materials/mat_tile_dark.tres" id="1_ocl2j"]
+[ext_resource type="Material" uid="uid://dkx5of0xjb8lp" path="res://grid/Materials/mat_tile_transparent.tres" id="2_3tul4"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_nogh5"]
 material = ExtResource("1_ocl2j")
@@ -13,6 +14,10 @@ size = Vector3(1.4, 0.2, 1.4)
 [node name="TileSingle" type="Node3D"]
 
 [node name="Meshes" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+
+[node name="RockSlab2" parent="Meshes" instance=ExtResource("1_bmamj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
 
 [node name="BaseSelector" type="MeshInstance3D" parent="Meshes"]
 mesh = SubResource("BoxMesh_nogh5")

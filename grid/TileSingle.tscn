@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dsi6qxv340xyg"]
+[gd_scene load_steps=6 format=3 uid="uid://dsi6qxv340xyg"]
 
-[ext_resource type="Material" uid="uid://62bpcobaufnw" path="res://grid/mat_tile.tres" id="1_nli44"]
-[ext_resource type="Material" uid="uid://dkx5of0xjb8lp" path="res://grid/mat_tile_transparent.tres" id="2_377nf"]
+[ext_resource type="Material" uid="uid://62bpcobaufnw" path="res://grid/Materials/mat_tile.tres" id="1_nli44"]
+[ext_resource type="Material" uid="uid://dkx5of0xjb8lp" path="res://grid/Materials/mat_tile_transparent.tres" id="2_377nf"]
+[ext_resource type="PackedScene" uid="uid://jj4e5oe3vkws" path="res://grid/rock_slab.tscn" id="3_6i1rv"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_nogh5"]
 material = ExtResource("1_nli44")
@@ -13,6 +14,10 @@ size = Vector3(1.4, 0.2, 1.4)
 [node name="TileSingle" type="Node3D"]
 
 [node name="Meshes" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+
+[node name="RockSlab2" parent="Meshes" instance=ExtResource("3_6i1rv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
 
 [node name="BaseSelector" type="MeshInstance3D" parent="Meshes"]
 mesh = SubResource("BoxMesh_nogh5")
@@ -33,4 +38,5 @@ surface_material_override/0 = ExtResource("2_377nf")
 [node name="Area3D" type="Area3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
 shape = SubResource("BoxShape3D_utwmt")

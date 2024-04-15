@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://jj4e5oe3vkws"]
+
+[ext_resource type="PackedScene" uid="uid://4i2ux4fuy2f7" path="res://assets/raw/RockSlab.gltf" id="1_xr7m5"]
+[ext_resource type="Material" uid="uid://ciajjqq76ys78" path="res://grid/Materials/mat_dusty_stone.tres" id="2_shwv7"]
+
+[node name="RockSlab2" instance=ExtResource("1_xr7m5")]
+
+[node name="RockSlab" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_shwv7")
