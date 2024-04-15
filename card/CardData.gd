@@ -1,18 +1,7 @@
 class_name CardData
 extends Resource
 
-enum Spawn {
-	Elemental,
-	Kobold,
-	Moth,
-	AttackRune1,
-	AttackRune2,
-	TauntRune,
-	HealRune,
-	MoveBackRune,
-	MoveDiagonalRune,
-}
-
-@export var spawn: Spawn
+@export var spawn: PackedScene
 @export var sprite: Texture2D
 @export var text: String
+@export_enum("None:Element.None", "Fire:Element.Fire", "Wind:Element.Wind", "Earth:Element.Earth") var element: int

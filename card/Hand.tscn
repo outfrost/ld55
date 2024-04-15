@@ -37,3 +37,16 @@ gizmo_extents = 0.04
 [node name="SpawnPos" type="Marker3D" parent="."]
 transform = Transform3D(-0.984808, 0.122788, 0.122788, 0, 0.707107, -0.707107, -0.173648, -0.696364, -0.696364, 0.75, 0.15, -0.1)
 gizmo_extents = 0.04
+
+[node name="HoldPos" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0.2, 0)
+gizmo_extents = 0.04
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
