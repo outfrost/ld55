@@ -31,6 +31,16 @@ gi_mode = 2
 mesh = SubResource("QuadMesh_mrkwk")
 skeleton = NodePath("../..")
 
+[node name="CardText" type="Label3D" parent="Visual/Front"]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0.001)
+pixel_size = 0.001
+double_sided = false
+alpha_cut = 1
+text = "TEXT"
+vertical_alignment = 0
+autowrap_mode = 3
+width = 400.0
+
 [node name="Back" type="MeshInstance3D" parent="Visual"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
 gi_mode = 2

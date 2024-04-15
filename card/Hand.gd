@@ -1,5 +1,8 @@
 extends Node3D
 
+signal card_selected(card_data: CardData)
+signal card_unselected
+
 const HAND_SIZE: = 7
 const CARD_SCN: = preload("res://card/Card.tscn")
 
@@ -63,9 +66,12 @@ func draw() -> void:
 	var num_draw: = HAND_SIZE - cards.size()
 	for i in range(num_draw):
 		var card: = CARD_SCN.instantiate()
+
+		card.data = deck.pool.pick_random()
+
 		card.transform = spawn_xform
 		add_child(card)
-		card.selected.connect(func(): card_selected(card))
+		card.selected.connect(func(): on_card_selected(card))
 		cards.append(HandCard.new(card, spawn_xform))
 	align()
 
@@ -74,17 +80,19 @@ func align() -> void:
 	for i in range(cards.size()):
 		cards[i].target_xform = xforms[i + first_idx]
 
-func card_selected(card: Card) -> void:
+func on_card_selected(card: Card) -> void:
 	for c in cards:
 		c.node.set_pickable(false)
 		if c.node == card:
 			c.target_xform = hold_xform
 	selected = card
+	card_selected.emit(selected.data)
 
 func unselect_card() -> void:
 	if !selected:
 		return
 
+	card_unselected.emit()
 	selected = null
 	for card in cards:
 		card.node.set_pickable(true)

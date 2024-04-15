@@ -9,6 +9,11 @@ const HOVER_OFFSET_SCALE: = Vector3(1.3, 1.3, 1.3)
 @onready var area: Area3D = $Area3D
 @onready var visual: Node3D = $Visual
 
+var data: CardData:
+	set(v):
+		data = v
+		$Visual/Front/CardText.text = v.text
+
 var visual_target_pos: = Vector3.ZERO
 var visual_target_scale: = Vector3.ONE
 var keep_scale: bool = false
