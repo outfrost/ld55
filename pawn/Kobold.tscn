@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://d352uxt6n8t0a"]
+
+[ext_resource type="PackedScene" uid="uid://c4b6w71ck5cby" path="res://assets/raw/kobold.gltf" id="1_cd6bu"]
+[ext_resource type="Script" path="res://pawn/Minion.gd" id="2_x0p5f"]
+
+[node name="kobold" instance=ExtResource("1_cd6bu")]
+script = ExtResource("2_x0p5f")
+damage = 3

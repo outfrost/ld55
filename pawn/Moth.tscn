@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://r4rqlwevfgsk"]
+
+[ext_resource type="PackedScene" uid="uid://bwb5islx50enf" path="res://assets/raw/Moth.gltf" id="1_msoff"]
+[ext_resource type="Script" path="res://pawn/Minion.gd" id="2_urp6o"]
+
+[node name="Moth" instance=ExtResource("1_msoff")]
+script = ExtResource("2_urp6o")
+damage = 4
+hp = 2
+initiative_order = 1
+speed = 3
