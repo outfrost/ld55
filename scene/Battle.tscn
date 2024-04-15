@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" path="res://grid/GridColliderGenerator.gd" id="1_f15ms"]
 [ext_resource type="PackedScene" uid="uid://qthxdvn20xn2" path="res://grid/arean_edge.tscn" id="2_3ikw5"]
+[ext_resource type="PackedScene" uid="uid://06nd072o273d" path="res://assets/raw/TerrainB.gltf" id="3_m1atw"]
 [ext_resource type="PackedScene" uid="uid://bl8lmuhqi2nk8" path="res://card/Hand.tscn" id="2_isvbf"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jc28x"]
@@ -32,7 +33,9 @@ far = 200.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.21, -0.35)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.732353, 0.347877, -0.585355, 0, 0.859647, 0.510888, 0.680925, -0.374151, 0.629565, -7, 8, 0)
+transform = Transform3D(0.785076, 0.168153, -0.596138, -0.118835, 0.985456, 0.12147, 0.607894, -0.0245207, 0.79364, -7, 4, 0)
 
 [node name="AreanEdge" parent="." instance=ExtResource("2_3ikw5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.543506, 0)
+
+[node name="TerrainB" parent="." instance=ExtResource("3_m1atw")]

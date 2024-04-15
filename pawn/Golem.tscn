@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://ct8km25t2dgq1"]
+[gd_scene load_steps=4 format=3 uid="uid://ct8km25t2dgq1"]
 
 [ext_resource type="PackedScene" uid="uid://e61q2uyygmh5" path="res://assets/raw/Golem.gltf" id="1_rtv7x"]
 [ext_resource type="Script" path="res://pawn/Minion.gd" id="2_di8uj"]
+[ext_resource type="Material" uid="uid://xlc1yhi2a0ee" path="res://pawn/mat_creatures_wood.tres" id="3_k8q5b"]
 
 [node name="Golem" instance=ExtResource("1_rtv7x")]
 script = ExtResource("2_di8uj")
@@ -9,3 +10,6 @@ damage = 4
 hp = 8
 initiative_order = 3
 speed = 1
+
+[node name="Golem_001" parent="Armature/Skeleton3D" index="0"]
+surface_material_override/0 = ExtResource("3_k8q5b")

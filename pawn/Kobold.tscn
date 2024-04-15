@@ -1,8 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://d352uxt6n8t0a"]
+[gd_scene load_steps=4 format=3 uid="uid://d352uxt6n8t0a"]
 
-[ext_resource type="PackedScene" uid="uid://c4b6w71ck5cby" path="res://assets/raw/kobold.gltf" id="1_cd6bu"]
+[ext_resource type="PackedScene" uid="uid://bpnkxp7tc718f" path="res://assets/raw/kobold.gltf" id="1_cd6bu"]
 [ext_resource type="Script" path="res://pawn/Minion.gd" id="2_x0p5f"]
+[ext_resource type="Material" uid="uid://xlc1yhi2a0ee" path="res://pawn/mat_creatures_wood.tres" id="3_lwstu"]
 
 [node name="kobold" instance=ExtResource("1_cd6bu")]
 script = ExtResource("2_x0p5f")
 damage = 3
+
+[node name="Kobold_001" parent="." index="0"]
+surface_material_override/0 = ExtResource("3_lwstu")
