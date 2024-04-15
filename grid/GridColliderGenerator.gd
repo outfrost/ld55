@@ -10,14 +10,14 @@ extends Node3D
 @export var grid_size : float = 1.5 # this is the size of a tile
 
 # materials storage
-var mat_selected : Material = load("res://grid/mat_tile_selected.tres")
-var mat_attack : Material = load("res://grid/mat_tile_attackable.tres")
-var mat_transparent : Material = load("res://grid/mat_tile_transparent.tres")
+var mat_selected : Material = load("res://grid/Materials/mat_tile_selected.tres")
+var mat_attack : Material = load("res://grid/Materials/mat_tile_attackable.tres")
+var mat_transparent : Material = load("res://grid/Materials/mat_tile_transparent.tres")
 
 # internal storage
 var tiles_list = []
 var tiles_occupied = []
-var selected_tile : Vector2i
+var selected_tile := - Vector2i.ONE
 var freeze_overlay : bool
 
 func _ready():
@@ -45,20 +45,29 @@ func _ready():
 
 func TileHovered(x , y):
 	((tiles_list[x][y] as Node3D).get_node(^"Meshes/BaseSelector") as MeshInstance3D).set_surface_override_material(0,mat_selected)
-	((tiles_list[x][y] as Node3D).get_node(^"Meshes/MeshMove") as MeshInstance3D).set_surface_override_material(0,mat_selected)
 	#clicked on tile to select it
 
 	#see where tile can attack
-	((tiles_list[x][y] as Node3D).get_node(^"Meshes/MeshAttack") as MeshInstance3D).set_surface_override_material(0,mat_attack)
+	#((tiles_list[x][y] as Node3D).get_node(^"Meshes/MeshAttack") as MeshInstance3D).set_surface_override_material(0,mat_attack)
+
+	#see where tile can move
+	#((tiles_list[x][y] as Node3D).get_node(^"Meshes/MeshMove") as MeshInstance3D).set_surface_override_material(0,mat_selected)
 
 	#print("tile hovered xy: " ,x ,y)
 
 func TileUnhovered(x , y):
-	ClearBoard()
+	if !(selected_tile.x == x and selected_tile.y == y):
+		ClearSelf(x,y)
 	pass
 
 func TileClicked(x , y, event):
-	print(event)
+	if event is InputEventMouseButton:
+		if event.button_index == 1 and event.button_mask == 1:
+			print("clicked left mouse on ", x, " ", y)
+			ClearSelf(selected_tile.x,selected_tile.y)
+			selected_tile.x = x
+			selected_tile.y = y
+
 	#if event is click, set as active, stop hover, show possiblemoves
 	#if event is right click ON ANY TILE, reset board
 
@@ -71,6 +80,11 @@ func ClearBoard() -> void: # resets the entire board
 			((tiles_list[i][j] as Node3D).get_node(^"Meshes/BaseSelector") as MeshInstance3D).set_surface_override_material(0,null)
 			((tiles_list[i][j] as Node3D).get_node(^"Meshes/MeshMove") as MeshInstance3D).set_surface_override_material(0,mat_transparent)
 	pass
+
+func ClearSelf(x,y) -> void:
+	((tiles_list[x][y] as Node3D).get_node(^"Meshes/MeshAttack") as MeshInstance3D).set_surface_override_material(0,mat_transparent)
+	((tiles_list[x][y] as Node3D).get_node(^"Meshes/BaseSelector") as MeshInstance3D).set_surface_override_material(0,null)
+	((tiles_list[x][y] as Node3D).get_node(^"Meshes/MeshMove") as MeshInstance3D).set_surface_override_material(0,mat_transparent)
 
 func IsOnBoard(a : Array) -> bool : # takes a 2-pair, returns true if its on the board
 	if a[0] < 0 or a[0] >= width:
