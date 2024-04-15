@@ -9,10 +9,18 @@ const HOVER_OFFSET_SCALE: = Vector3(1.3, 1.3, 1.3)
 @onready var area: Area3D = $Area3D
 @onready var visual: Node3D = $Visual
 
+var sprite_mat: StandardMaterial3D = null
+
 var data: CardData:
 	set(v):
 		data = v
-		$Visual/Front/CardText.text = v.text
+		if v:
+			$Visual/Front/CardText.text = v.text
+			if !sprite_mat:
+				$Visual/Front/Sprite.mesh = $Visual/Front/Sprite.mesh.duplicate(true)
+				sprite_mat = $Visual/Front/Sprite.mesh.material
+				sprite_mat.albedo_color = Color.WHITE
+			sprite_mat.albedo_texture = v.sprite
 
 var visual_target_pos: = Vector3.ZERO
 var visual_target_scale: = Vector3.ONE
