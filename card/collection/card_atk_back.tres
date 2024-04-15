@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=3 format=3 uid="uid://bc21n3aqy2rsy"]
+
+[ext_resource type="Script" path="res://card/CardData.gd" id="1_fe8sk"]
+[ext_resource type="PackedScene" uid="uid://1ijftt1ggyn7" path="res://pawn/RuneAtkBack.tscn" id="2_rrv4f"]
+
+[resource]
+script = ExtResource("1_fe8sk")
+spawn = ExtResource("2_rrv4f")
+minion = false
+text = "Mirror Flame"
+element = 1

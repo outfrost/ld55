@@ -5,4 +5,4 @@ extends Resource
 @export var minion: bool
 @export var sprite: Texture2D
 @export var text: String
-@export_enum("None:Element.None", "Fire:Element.Fire", "Wind:Element.Wind", "Earth:Element.Earth") var element: int
+@export_enum("None", "Fire", "Wind", "Earth") var element: int

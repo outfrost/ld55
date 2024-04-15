@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://boi3m3te8n7nc"]
+
+[ext_resource type="Script" path="res://pawn/RuneAtkDiagonal.gd" id="1_2a2j7"]
+[ext_resource type="Material" uid="uid://yd1hesttr7ad" path="res://pawn/mat_rune_atk_diagonal.tres" id="2_4v6xs"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_5w22g"]
+material = ExtResource("2_4v6xs")
+size = Vector2(0.714, 1)
+orientation = 1
+
+[node name="RuneAtkDiagonal" type="Node3D"]
+script = ExtResource("1_2a2j7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("QuadMesh_5w22g")

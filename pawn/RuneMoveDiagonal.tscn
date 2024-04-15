@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://dghy23mf182lw"]
+
+[ext_resource type="Script" path="res://pawn/RuneMoveDiagonal.gd" id="1_83cdp"]
+[ext_resource type="Material" uid="uid://bj7cv57o0dkey" path="res://pawn/mat_rune_move_diagonal.tres" id="2_7nowy"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_5w22g"]
+material = ExtResource("2_7nowy")
+size = Vector2(0.714, 1)
+orientation = 1
+
+[node name="RuneMoveDiagonal" type="Node3D"]
+script = ExtResource("1_83cdp")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("QuadMesh_5w22g")

@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://dj8sb5sjwneb6"]
+
+[ext_resource type="Script" path="res://pawn/RuneMoveBack.gd" id="1_rfeki"]
+[ext_resource type="Material" uid="uid://ep8thybmr25l" path="res://pawn/mat_rune_move_back.tres" id="2_jnyr4"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_5w22g"]
+material = ExtResource("2_jnyr4")
+size = Vector2(0.714, 1)
+orientation = 1
+
+[node name="RuneMoveBack" type="Node3D"]
+script = ExtResource("1_rfeki")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("QuadMesh_5w22g")

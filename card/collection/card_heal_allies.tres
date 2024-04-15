@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=3 format=3 uid="uid://bknvijoq2pvr"]
+
+[ext_resource type="Script" path="res://card/CardData.gd" id="1_2y5w3"]
+[ext_resource type="PackedScene" uid="uid://w6f4rip3oag5" path="res://pawn/RuneHealAllies.tscn" id="2_ocaph"]
+
+[resource]
+script = ExtResource("1_2y5w3")
+spawn = ExtResource("2_ocaph")
+minion = false
+text = "Restoration"
+element = 3

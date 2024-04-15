@@ -1,128 +1,16 @@
-[gd_resource type="Resource" script_class="Deck" load_steps=23 format=3 uid="uid://bheoeso164iy5"]
+[gd_resource type="Resource" script_class="Deck" load_steps=11 format=3 uid="uid://bheoeso164iy5"]
 
-[ext_resource type="Script" path="res://card/CardData.gd" id="1_0n417"]
 [ext_resource type="Script" path="res://card/Deck.gd" id="1_twwm3"]
-
-[sub_resource type="Resource" id="Resource_hyvsy"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
-
-[sub_resource type="Resource" id="Resource_ysehi"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
-
-[sub_resource type="Resource" id="Resource_0cbne"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
-
-[sub_resource type="Resource" id="Resource_o5c6w"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
-
-[sub_resource type="Resource" id="Resource_bhstg"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
-
-[sub_resource type="Resource" id="Resource_si5st"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
-
-[sub_resource type="Resource" id="Resource_rki8n"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
-
-[sub_resource type="Resource" id="Resource_6clmm"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
-
-[sub_resource type="Resource" id="Resource_grnjj"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
-
-[sub_resource type="Resource" id="Resource_8er2m"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
-
-[sub_resource type="Resource" id="Resource_jggss"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
-
-[sub_resource type="Resource" id="Resource_fgbl6"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
-
-[sub_resource type="Resource" id="Resource_fqeng"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
-
-[sub_resource type="Resource" id="Resource_t5jyj"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
-
-[sub_resource type="Resource" id="Resource_16gjc"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
-
-[sub_resource type="Resource" id="Resource_03w7u"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
-
-[sub_resource type="Resource" id="Resource_cl657"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
-
-[sub_resource type="Resource" id="Resource_jx76f"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
-
-[sub_resource type="Resource" id="Resource_fv2gs"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
-
-[sub_resource type="Resource" id="Resource_bg0jf"]
-script = ExtResource("1_0n417")
-minion = false
-text = ""
-element = 0
+[ext_resource type="Resource" uid="uid://1atkdolvyeyo" path="res://card/collection/card_golem.tres" id="1_y5aic"]
+[ext_resource type="Resource" uid="uid://bg6pfs6jsjwhp" path="res://card/collection/card_kobold.tres" id="2_ds4bh"]
+[ext_resource type="Resource" uid="uid://0p241t4rqtl" path="res://card/collection/card_moth.tres" id="3_duj87"]
+[ext_resource type="Resource" uid="uid://bc21n3aqy2rsy" path="res://card/collection/card_atk_back.tres" id="4_02w73"]
+[ext_resource type="Resource" uid="uid://ce3mmswwacxlh" path="res://card/collection/card_atk_diagonal.tres" id="5_4qs8q"]
+[ext_resource type="Resource" uid="uid://cx6ygm64vxnyn" path="res://card/collection/card_taunt.tres" id="6_2h0uo"]
+[ext_resource type="Resource" uid="uid://bknvijoq2pvr" path="res://card/collection/card_heal_allies.tres" id="7_rwswq"]
+[ext_resource type="Resource" uid="uid://ucjsvkjhyacx" path="res://card/collection/card_move_back.tres" id="8_7u8ga"]
+[ext_resource type="Resource" uid="uid://bjtej04kwn7mu" path="res://card/collection/card_move_diagonal.tres" id="9_g0g4t"]
 
 [resource]
 script = ExtResource("1_twwm3")
-pool = Array[ExtResource("1_0n417")]([SubResource("Resource_hyvsy"), SubResource("Resource_ysehi"), SubResource("Resource_0cbne"), SubResource("Resource_o5c6w"), SubResource("Resource_bhstg"), SubResource("Resource_si5st"), SubResource("Resource_rki8n"), SubResource("Resource_6clmm"), SubResource("Resource_grnjj"), SubResource("Resource_8er2m"), SubResource("Resource_jggss"), SubResource("Resource_fgbl6"), SubResource("Resource_fqeng"), SubResource("Resource_t5jyj"), SubResource("Resource_16gjc"), SubResource("Resource_03w7u"), SubResource("Resource_cl657"), SubResource("Resource_jx76f"), SubResource("Resource_fv2gs"), SubResource("Resource_bg0jf")])
+pool = Array[Resource("res://card/CardData.gd")]([ExtResource("1_y5aic"), ExtResource("1_y5aic"), ExtResource("2_ds4bh"), ExtResource("2_ds4bh"), ExtResource("3_duj87"), ExtResource("3_duj87"), ExtResource("4_02w73"), ExtResource("4_02w73"), ExtResource("5_4qs8q"), ExtResource("5_4qs8q"), ExtResource("6_2h0uo"), ExtResource("6_2h0uo"), ExtResource("7_rwswq"), ExtResource("7_rwswq"), ExtResource("8_7u8ga"), ExtResource("8_7u8ga"), ExtResource("9_g0g4t"), ExtResource("9_g0g4t"), ExtResource("1_y5aic"), ExtResource("2_ds4bh")])

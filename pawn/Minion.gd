@@ -21,3 +21,6 @@ var attack_reach: Array[Vector2i] = [
 	Vector2i(-1, 0),
 	Vector2i(1, 0),
 ]
+
+var taunt: = false
+var heal_allies: = false

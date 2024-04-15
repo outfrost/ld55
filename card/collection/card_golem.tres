@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=3 format=3 uid="uid://1atkdolvyeyo"]
+
+[ext_resource type="Script" path="res://card/CardData.gd" id="1_i8bcw"]
+[ext_resource type="PackedScene" uid="uid://ct8km25t2dgq1" path="res://pawn/Golem.tscn" id="2_3wpgg"]
+
+[resource]
+script = ExtResource("1_i8bcw")
+spawn = ExtResource("2_3wpgg")
+minion = true
+text = "Golem"
+element = 0

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=3 format=3 uid="uid://bg6pfs6jsjwhp"]
+
+[ext_resource type="Script" path="res://card/CardData.gd" id="1_j05ho"]
+[ext_resource type="PackedScene" uid="uid://d352uxt6n8t0a" path="res://pawn/Kobold.tscn" id="2_bmrw8"]
+
+[resource]
+script = ExtResource("1_j05ho")
+spawn = ExtResource("2_bmrw8")
+minion = true
+text = "Kobold"
+element = 0

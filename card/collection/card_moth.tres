@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=3 format=3 uid="uid://0p241t4rqtl"]
+
+[ext_resource type="Script" path="res://card/CardData.gd" id="1_jfxhw"]
+[ext_resource type="PackedScene" uid="uid://r4rqlwevfgsk" path="res://pawn/Moth.tscn" id="2_qjjuu"]
+
+[resource]
+script = ExtResource("1_jfxhw")
+spawn = ExtResource("2_qjjuu")
+minion = true
+text = "Moth"
+element = 0

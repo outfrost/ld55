@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dbdbx71kht7ra"]
+
+[ext_resource type="Texture2D" uid="uid://cnqbikriwa42v" path="res://assets/symbols/1.png" id="1_ncroi"]
+
+[resource]
+transparency = 1
+albedo_color = Color(0.4, 0.8, 0.6, 1)
+albedo_texture = ExtResource("1_ncroi")
+metallic_specular = 0.0
+emission_enabled = true
+emission = Color(0.5, 1, 0.75, 1)
+emission_energy_multiplier = 0.2
+emission_texture = ExtResource("1_ncroi")

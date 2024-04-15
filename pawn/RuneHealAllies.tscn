@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://w6f4rip3oag5"]
+
+[ext_resource type="Script" path="res://pawn/RuneHealAllies.gd" id="1_u5tgp"]
+[ext_resource type="Material" uid="uid://ddc5la4vi2v2i" path="res://pawn/mat_rune_heal_allies.tres" id="2_3x2dv"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_5w22g"]
+material = ExtResource("2_3x2dv")
+size = Vector2(0.714, 1)
+orientation = 1
+
+[node name="RuneHealAllies" type="Node3D"]
+script = ExtResource("1_u5tgp")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("QuadMesh_5w22g")
