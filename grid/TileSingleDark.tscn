@@ -1,11 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://doq4mbusoxmxe"]
+[gd_scene load_steps=5 format=3 uid="uid://doq4mbusoxmxe"]
 
 [ext_resource type="PackedScene" uid="uid://jj4e5oe3vkws" path="res://grid/rock_slab.tscn" id="1_bmamj"]
-[ext_resource type="Material" uid="uid://ru7x13kt6wri" path="res://grid/Materials/mat_tile_dark.tres" id="1_ocl2j"]
 [ext_resource type="Material" uid="uid://dkx5of0xjb8lp" path="res://grid/Materials/mat_tile_transparent.tres" id="2_3tul4"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_nogh5"]
-material = ExtResource("1_ocl2j")
+material = ExtResource("2_3tul4")
 size = Vector3(1.35, 0.1, 1.35)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_utwmt"]
