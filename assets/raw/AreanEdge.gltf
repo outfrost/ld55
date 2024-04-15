@@ -15,7 +15,12 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"Arena_Edge"
+			"name":"Arena_Edge",
+			"translation":[
+				0,
+				0.07999999821186066,
+				0
+			]
 		}
 	],
 	"meshes":[
@@ -37,7 +42,7 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":1234,
+			"count":1286,
 			"max":[
 				7.099999904632568,
 				0.5,
@@ -53,51 +58,51 @@
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":1234,
+			"count":1286,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":1234,
+			"count":1286,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":2190,
+			"count":2346,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":14808,
+			"byteLength":15432,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":14808,
-			"byteOffset":14808,
+			"byteLength":15432,
+			"byteOffset":15432,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":9872,
-			"byteOffset":29616,
+			"byteLength":10288,
+			"byteOffset":30864,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":4380,
-			"byteOffset":39488,
+			"byteLength":4692,
+			"byteOffset":41152,
 			"target":34963
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":43868,
+			"byteLength":45844,
 			"uri":"AreanEdge.bin"
 		}
 	]
