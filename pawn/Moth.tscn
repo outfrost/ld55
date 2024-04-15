@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://r4rqlwevfgsk"]
+[gd_scene load_steps=4 format=3 uid="uid://r4rqlwevfgsk"]
 
 [ext_resource type="PackedScene" uid="uid://bwb5islx50enf" path="res://assets/raw/Moth.gltf" id="1_msoff"]
 [ext_resource type="Script" path="res://pawn/Minion.gd" id="2_urp6o"]
+[ext_resource type="Material" uid="uid://xlc1yhi2a0ee" path="res://pawn/mat_creatures_wood.tres" id="3_3c1a6"]
 
 [node name="Moth" instance=ExtResource("1_msoff")]
 script = ExtResource("2_urp6o")
@@ -9,3 +10,6 @@ damage = 4
 hp = 2
 initiative_order = 1
 speed = 3
+
+[node name="Moth_001" parent="Armature_001/Skeleton3D" index="0"]
+surface_material_override/0 = ExtResource("3_3c1a6")
