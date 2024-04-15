@@ -5,83 +5,123 @@
 
 [sub_resource type="Resource" id="Resource_hyvsy"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [sub_resource type="Resource" id="Resource_ysehi"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [sub_resource type="Resource" id="Resource_0cbne"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [sub_resource type="Resource" id="Resource_o5c6w"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [sub_resource type="Resource" id="Resource_bhstg"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [sub_resource type="Resource" id="Resource_si5st"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [sub_resource type="Resource" id="Resource_rki8n"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [sub_resource type="Resource" id="Resource_6clmm"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [sub_resource type="Resource" id="Resource_grnjj"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [sub_resource type="Resource" id="Resource_8er2m"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [sub_resource type="Resource" id="Resource_jggss"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [sub_resource type="Resource" id="Resource_fgbl6"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [sub_resource type="Resource" id="Resource_fqeng"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [sub_resource type="Resource" id="Resource_t5jyj"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [sub_resource type="Resource" id="Resource_16gjc"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [sub_resource type="Resource" id="Resource_03w7u"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [sub_resource type="Resource" id="Resource_cl657"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [sub_resource type="Resource" id="Resource_jx76f"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [sub_resource type="Resource" id="Resource_fv2gs"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [sub_resource type="Resource" id="Resource_bg0jf"]
 script = ExtResource("1_0n417")
+minion = false
 text = ""
+element = 0
 
 [resource]
 script = ExtResource("1_twwm3")
