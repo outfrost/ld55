@@ -22,6 +22,13 @@ var data: CardData:
 				sprite_mat = $Visual/Front/Sprite.mesh.material
 				sprite_mat.albedo_color = Color.WHITE
 			sprite_mat.albedo_texture = v.sprite
+			match v.element:
+				1: # Fire
+					sprite_mat.albedo_color = Color.from_hsv(355.0 / 360.0, 0.5, 1.0, 1.0)
+				2: # Wind
+					sprite_mat.albedo_color = Color.from_hsv(240.0 / 360.0, 0.5, 1.0, 1.0)
+				3: # Earth
+					sprite_mat.albedo_color = Color.from_hsv(150.0 / 360.0, 0.5, 1.0, 1.0)
 
 var visual_target_pos: = Vector3.ZERO
 var visual_target_scale: = Vector3.ONE
