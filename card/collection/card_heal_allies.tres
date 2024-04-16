@@ -10,5 +10,5 @@ spawn = ExtResource("2_ocaph")
 minion = false
 sprite = ExtResource("3_rp6lb")
 text = "Restoration"
-description = "At the end of each round, heal allies within 2 tiles"
+description = "At the end of each round, heal allies within 2 tiles of a Restoration minion"
 element = 3

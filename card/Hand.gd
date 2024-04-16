@@ -39,6 +39,7 @@ func _ready() -> void:
 	draw()
 
 func _process(delta: float) -> void:
+	#DebugOverlay.display_public("fps %d" % Performance.get_monitor(Performance.TIME_FPS))
 	for i in range(cards.size()):
 		var card = cards[i]
 		var dist: float = (card.target_xform.origin - card.node.position).length()
