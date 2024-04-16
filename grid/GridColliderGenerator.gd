@@ -9,6 +9,8 @@ extends Node3D
 @export var width : int
 @export var grid_size : float = 1.5 # this is the size of a tile
 
+@onready var hand = $"../Camera3D/Hand"
+
 # materials storage
 var mat_normal : Material = load("res://grid/Materials/mat_tile.tres")
 var mat_selected : Material = load("res://grid/Materials/mat_tile_selected.tres")
@@ -51,8 +53,8 @@ func _ready():
 			(curTile.get_node(^"Area3D") as Area3D).mouse_exited.connect(func(): TileUnhovered(i,j))
 
 			# connect to the hand
-			get_node("../Camera3D/Hand").card_selected.connect(func(card_data: CardData): SelectedCard(card_data))
-			get_node("../Camera3D/Hand").card_unselected.connect(func(): UnselectedCard())
+			hand.card_selected.connect(func(card_data: CardData): SelectedCard(card_data))
+			hand.card_unselected.connect(func(): UnselectedCard())
 
 func SelectedCard(card_data: CardData):
 	card_selected = true
@@ -140,11 +142,7 @@ func PlaceOnTile(x,y): #put data from card, on x y; returns true if it worked
 			tiles_occupied_minions[x][y] = spawnable
 			# NOW WE NEED TO TURN THEM INTO AN ACTUAL THINKING BEING
 
-		#
-		#
-		# MAKE THE CARD GO DOWN FROM THE HAND SCRIPT, THE CARD IS USED AND PLACED NOW
-		#
-		#
+		hand.use_selected_card()
 		ClearBoard()
 		selected_card_data = null
 		card_selected = false

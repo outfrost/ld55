@@ -97,3 +97,18 @@ func unselect_card() -> void:
 	for card in cards:
 		card.node.set_pickable(true)
 	align()
+
+func use_selected_card() -> void:
+	if !selected:
+		return
+
+	remove_child(selected)
+	var idx: = 0
+	for i in range(cards.size()):
+		if cards[i].node == selected:
+			idx = i
+			break
+
+	cards.remove_at(idx)
+	selected.queue_free()
+	unselect_card()
