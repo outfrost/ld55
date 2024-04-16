@@ -10,4 +10,5 @@ spawn = ExtResource("2_it1st")
 minion = false
 sprite = ExtResource("3_58rr1")
 text = "Weaving Winds"
+description = "Allows minions to move diagonally"
 element = 2

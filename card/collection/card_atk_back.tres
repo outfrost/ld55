@@ -10,4 +10,5 @@ spawn = ExtResource("2_rrv4f")
 minion = false
 sprite = ExtResource("3_lske0")
 text = "Mirror Flame"
+description = "Allows minions to attack backwards"
 element = 1

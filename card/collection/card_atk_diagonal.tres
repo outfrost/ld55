@@ -10,4 +10,5 @@ spawn = ExtResource("2_8oupp")
 minion = false
 sprite = ExtResource("3_xo6l4")
 text = "Snaking Blaze"
+description = "Allows minions to attack diagonally"
 element = 1

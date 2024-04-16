@@ -1,9 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://baeubloubqiq7"]
+[gd_scene load_steps=9 format=3 uid="uid://baeubloubqiq7"]
 
 [ext_resource type="Material" uid="uid://copxgii18vfhi" path="res://card/mat_card_front.tres" id="1_au22g"]
 [ext_resource type="Material" uid="uid://cg05j3yjqmae7" path="res://card/mat_card_back.tres" id="1_qc11u"]
 [ext_resource type="Script" path="res://card/Card.gd" id="1_vgjhm"]
-[ext_resource type="Texture2D" uid="uid://bqbpeo50krcac" path="res://assets/card symbols/GolemCard.png" id="3_18tew"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kf4wg"]
 size = Vector3(0.1, 0.14, 0.02)
@@ -18,14 +17,6 @@ albedo_color = Color(1, 1, 1, 0)
 
 [sub_resource type="QuadMesh" id="QuadMesh_aesft"]
 material = SubResource("StandardMaterial3D_4aoxl")
-size = Vector2(0.1, 0.14)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cv5mk"]
-transparency = 1
-albedo_texture = ExtResource("3_18tew")
-
-[sub_resource type="QuadMesh" id="QuadMesh_4cljm"]
-material = SubResource("StandardMaterial3D_cv5mk")
 size = Vector2(0.1, 0.14)
 
 [sub_resource type="QuadMesh" id="QuadMesh_50ews"]
@@ -60,14 +51,21 @@ vertical_alignment = 0
 autowrap_mode = 3
 width = 400.0
 
+[node name="CardDescription" type="Label3D" parent="Visual/Front"]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, -0.026, 0.002)
+pixel_size = 0.001
+double_sided = false
+texture_filter = 5
+render_priority = 1
+text = "DESCRIPTION"
+font_size = 28
+vertical_alignment = 0
+autowrap_mode = 3
+width = 360.0
+
 [node name="Sprite" type="MeshInstance3D" parent="Visual/Front"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.001)
 mesh = SubResource("QuadMesh_aesft")
-
-[node name="Sprite2" type="MeshInstance3D" parent="Visual/Front"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.001)
-visible = false
-mesh = SubResource("QuadMesh_4cljm")
 
 [node name="Back" type="MeshInstance3D" parent="Visual"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)

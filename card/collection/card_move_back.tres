@@ -10,4 +10,5 @@ spawn = ExtResource("2_y6liw")
 minion = false
 sprite = ExtResource("3_h8snb")
 text = "Cyclone"
+description = "Allows minions to move backwards"
 element = 2
