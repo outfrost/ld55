@@ -10,6 +10,7 @@ orientation = 1
 
 [node name="RuneHealAllies" type="Node3D"]
 script = ExtResource("1_u5tgp")
+element = 3
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("QuadMesh_5w22g")

@@ -4,9 +4,10 @@
 [ext_resource type="Script" path="res://pawn/Minion.gd" id="2_x0p5f"]
 [ext_resource type="Material" uid="uid://xlc1yhi2a0ee" path="res://pawn/mat_creatures_wood.tres" id="3_lwstu"]
 
-[node name="kobold" instance=ExtResource("1_cd6bu")]
+[node name="Kobold" node_paths=PackedStringArray("mesh_inst") instance=ExtResource("1_cd6bu")]
 script = ExtResource("2_x0p5f")
 damage = 3
+mesh_inst = NodePath("Kobold_001")
 
 [node name="Kobold_001" parent="." index="0"]
 transform = Transform3D(-0.21, 0, -3.17091e-08, 0, 0.21, 0, 3.17091e-08, 0, -0.21, 0, 0, 0.05)

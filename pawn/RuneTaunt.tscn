@@ -10,6 +10,7 @@ orientation = 1
 
 [node name="RuneTaunt" type="Node3D"]
 script = ExtResource("1_fssqp")
+element = 3
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("QuadMesh_5w22g")

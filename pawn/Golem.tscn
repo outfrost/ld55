@@ -4,12 +4,13 @@
 [ext_resource type="Script" path="res://pawn/Minion.gd" id="2_di8uj"]
 [ext_resource type="Material" uid="uid://xlc1yhi2a0ee" path="res://pawn/mat_creatures_wood.tres" id="3_k8q5b"]
 
-[node name="Golem" instance=ExtResource("1_rtv7x")]
+[node name="Golem" node_paths=PackedStringArray("mesh_inst") instance=ExtResource("1_rtv7x")]
 script = ExtResource("2_di8uj")
 damage = 4
 hp = 8
 initiative_order = 3
 speed = 1
+mesh_inst = NodePath("Armature/Skeleton3D/Golem_001")
 
 [node name="Armature" parent="." index="0"]
 transform = Transform3D(-0.21, 0, -1.83588e-08, 0, 0.21, 0, 1.83588e-08, 0, -0.21, 0, 0.05, 0)

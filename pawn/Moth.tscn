@@ -4,12 +4,13 @@
 [ext_resource type="Script" path="res://pawn/Minion.gd" id="2_urp6o"]
 [ext_resource type="Material" uid="uid://xlc1yhi2a0ee" path="res://pawn/mat_creatures_wood.tres" id="3_3c1a6"]
 
-[node name="Moth" instance=ExtResource("1_msoff")]
+[node name="Moth" node_paths=PackedStringArray("mesh_inst") instance=ExtResource("1_msoff")]
 script = ExtResource("2_urp6o")
 damage = 4
 hp = 2
 initiative_order = 1
 speed = 3
+mesh_inst = NodePath("Armature_001/Skeleton3D/Moth_001")
 
 [node name="Armature_001" parent="." index="0"]
 transform = Transform3D(-0.16, 0, -2.41593e-08, 0, 0.16, 0, 2.41593e-08, 0, -0.16, 0, -0.035, -0.3)

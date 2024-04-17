@@ -10,6 +10,7 @@ orientation = 1
 
 [node name="RuneMoveDiagonal" type="Node3D"]
 script = ExtResource("1_83cdp")
+element = 2
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("QuadMesh_5w22g")

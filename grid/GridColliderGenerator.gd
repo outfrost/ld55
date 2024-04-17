@@ -142,6 +142,10 @@ func PlaceOnTile(x,y): #put data from card, on x y; returns true if it worked
 			tiles_occupied_minions[x][y] = spawnable
 			# NOW WE NEED TO TURN THEM INTO AN ACTUAL THINKING BEING
 
+			# give minion an rps element if they spawned on top of a rune
+			if tiles_occupied_rune[x][y] != null:
+				(spawnable as Minion).element = tiles_occupied_rune[x][y].element
+
 		hand.use_selected_card()
 		ClearBoard()
 		selected_card_data = null
