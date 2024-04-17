@@ -25,6 +25,11 @@ background_mode = 2
 sky = SubResource("Sky_w71mt")
 ssil_enabled = true
 ssil_radius = 2.0
+glow_levels/2 = 1.0
+glow_levels/5 = 0.0
+glow_intensity = 1.4
+glow_strength = 1.2
+glow_hdr_threshold = 0.5
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_4lxxy"]
 
@@ -40,17 +45,19 @@ height = 9
 width = 7
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.642788, 0.766045, 0, -0.766045, 0.642788, 0, 7.5, 11)
+transform = Transform3D(1, 0, 0, 0, 0.608762, 0.793354, 0, -0.793354, 0.608762, 0, 9, 11)
 current = true
+fov = 70.0
 near = 0.01
 far = 200.0
 
 [node name="Hand" parent="Camera3D" instance=ExtResource("2_isvbf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.21, -0.35)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.195, -0.34)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.652369, -0.113833, -0.749304, 0.757827, 0.111906, 0.642788, 0.0106815, -0.987177, 0.15927, -7, 4, 0)
+transform = Transform3D(0.636246, 0.183667, -0.749304, 0.632074, 0.43279, 0.642788, 0.442351, -0.882586, 0.15927, -7, 4, 0)
 shadow_enabled = true
+shadow_blur = 1.1
 directional_shadow_blend_splits = true
 directional_shadow_fade_start = 0.5
 

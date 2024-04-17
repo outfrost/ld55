@@ -11,5 +11,8 @@ hp = 8
 initiative_order = 3
 speed = 1
 
+[node name="Armature" parent="." index="0"]
+transform = Transform3D(-0.21, 0, -1.83588e-08, 0, 0.21, 0, 1.83588e-08, 0, -0.21, 0, 0.05, 0)
+
 [node name="Golem_001" parent="Armature/Skeleton3D" index="0"]
 surface_material_override/0 = ExtResource("3_k8q5b")

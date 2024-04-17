@@ -134,7 +134,7 @@ func PlaceOnTile(x,y): #put data from card, on x y; returns true if it worked
 	print("entered tile placing")
 	if CheckSpawn(x,y):
 		var spawnable = selected_card_data.spawn.instantiate()
-		spawnable.position = Vector3( (x - float(width-1) / 2) * grid_size , 1 , -1 * (y - float(height-1) / 2 ) * grid_size )
+		spawnable.position = Vector3( (x - float(width-1) / 2) * grid_size , 0.15 , -1 * (y - float(height-1) / 2 ) * grid_size )
 		add_child(spawnable)
 		if !selected_card_data.minion :
 			tiles_occupied_rune[x][y] = spawnable

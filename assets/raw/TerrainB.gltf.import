@@ -33,7 +33,7 @@ _subresources={
 "materials": {
 "Material.001": {
 "use_external/enabled": true,
-"use_external/path": "res://assets/raw/Material.001.tres"
+"use_external/path": "res://scene/mat_grass.tres"
 }
 }
 }
