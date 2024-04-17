@@ -33,6 +33,8 @@ class HandCard:
 var cards: Array[HandCard] = []
 var selected: Card = null
 
+var debug: = DebugOverlay.tracker(self)
+
 func _ready() -> void:
 	($Control as Control).gui_input.connect(gui_input)
 	await get_tree().create_timer(1.0).timeout

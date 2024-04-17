@@ -40,8 +40,8 @@ func _ready() -> void:
 	area.input_event.connect(input_event)
 
 func _process(delta: float) -> void:
-	visual.position = visual.position.lerp(visual_target_pos, 0.1)
-	visual.scale = visual.scale.lerp(visual_target_scale, 0.1)
+	visual.position = visual.position.lerp(visual_target_pos, 14.0 * delta)
+	visual.scale = visual.scale.lerp(visual_target_scale, 14.0 * delta)
 
 func set_pickable(active: bool) -> void:
 	keep_scale = !active
