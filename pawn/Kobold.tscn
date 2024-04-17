@@ -9,5 +9,5 @@ script = ExtResource("2_x0p5f")
 damage = 3
 
 [node name="Kobold_001" parent="." index="0"]
-transform = Transform3D(-0.23, 0, -2.01072e-08, 0, 0.23, 0, 2.01072e-08, 0, -0.23, 0, 0, 0.05)
+transform = Transform3D(-0.21, 0, -3.17091e-08, 0, 0.21, 0, 3.17091e-08, 0, -0.21, 0, 0, 0.05)
 surface_material_override/0 = ExtResource("3_lwstu")
